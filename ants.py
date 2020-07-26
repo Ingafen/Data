@@ -41,7 +41,7 @@ class World(object):
         self.__Q = 1.0 #количество выпускаемых ферромонов
         self.__ph = self.__Q / (self.cities_cnt * 2000) #начальное значение ферромонов
         self.__pherro = np.full(self.graph_matrix.shape, self.__ph) #матрица ферромонов, заполненная изначальным значением ферромонов       
-        self.__cities = [] 
+        self.__cities = [] #список городов
         self.__best_way_lngt=1e+6
         self.__best_ant = None
         for i in range(self.cities_cnt):
